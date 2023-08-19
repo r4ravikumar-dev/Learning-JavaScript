@@ -22,3 +22,4 @@ console.log(allheros1); //output: [ 'Thor', 'Ironman', 'Spiderman', 'Batman', 'F
 const anotherArray = [1,2,3,[4,5,6],7,[7,8,[8,9]]]
 const realAnotherArray = anotherArray.flat(Infinity) //Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 console.log(realAnotherArray); //output: [ 1, 2, 3, 4, 5, 6, 7, 7, 8, 8, 9 ]
+
