@@ -114,3 +114,20 @@ console.log(Object.values(tinderuser)); //eturns an array of values of the enume
 console.log(Object.entries(tinderuser)); //Returns an array of key/values of the enumerable properties of an object
 
 console.log(tinderuser.hasOwnProperty('isloggedin')); //Determines whether an object has a property with the specified name. (returns output as boolean)
+
+
+//Destructuring of Object
+
+const course ={
+    coursename: "Learning JavaScript",
+    price: "999",
+    courseInstructor: "Hitesh Choudhary"
+}
+
+//course.courseInstructor //Basic syntax for accessing the object
+
+const {courseInstructor} = course //another syntax for accessing the objects
+console.log(courseInstructor);
+
+const {courseInstructor: instructor } = course //in this syntax we can change the name of object according to our convenience, it termed as destructruing of object
+console.log(instructor);
