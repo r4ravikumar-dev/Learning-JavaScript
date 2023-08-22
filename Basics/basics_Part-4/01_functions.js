@@ -31,3 +31,41 @@ function loginUserMessage (username){
 // loginUserMessage("Ravi")
 // console.log(loginUserMessage("Ravi"));
 console.log(loginUserMessage()); 
+
+
+//Functions with objects and array
+
+function calculateCartPrice(...num1){
+    return num1
+} //if we declare only 1 parameter but in some situation we want more than one aergument then we use rest operator, it symbol is same as spread operator but its work is to pack all the argument in one and return it in a single parameter and it will give it in array
+
+console.log(calculateCartPrice(800,900,500));
+
+
+//passing object in the function
+const user = {
+    username: "Ravi",
+    price: 299
+}
+
+function handelObject(anyObject){
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+// handelObject(user)
+handelObject({
+    username: "Satyam",
+    price: 499
+}) // we can pass oject too in the parameter
+
+
+//passing array in function
+
+const myNewArray = [500,300,800,200]
+
+function returnSceondValue(getArray){
+    return getArray[3]
+}
+
+console.log(returnSceondValue(myNewArray)); // here we are passing array as ann argument
+console.log(returnSceondValue([200,300,400,500])); // here we are passing array as a variable
