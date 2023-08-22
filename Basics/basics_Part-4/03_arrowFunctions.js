@@ -53,11 +53,10 @@
 
 // const addTwo = (num1 , num2) => num1 + num2 
 
-// const addTwo = (num1 , num2) => (num1 + num2) // when we use parentheses () then we don't have to use return keyword 
+// const addTwo = (num1 , num2) => (num1 + num2) // when we use parentheses () then we don't have to use return keyword
 
 // example of implicit return, in this the functionn arguments are written in a single line
 
 const addTwo = (num1 , num2) => ({username: "Ravi"}) // for object deceleration we have to use the curly bracket
 
 console.log(addTwo(3,5));
-
