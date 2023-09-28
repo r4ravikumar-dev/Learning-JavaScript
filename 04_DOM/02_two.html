@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Obejct Model (DOM) Lecture-2</title>
+</head>
+<body style="background-color: black; color: #ffff">
+    <div class="parent">
+        <!-- this is the count of days in week -->
+        <div class="day">Sunday</div>
+        <div class="day">Monady</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children); //all elenment is having thrie children element too and this will be displayed as HTMLCollection
+    console.log(parent.children[1].innerHTML);
+
+    for (let i=0; i<parent.children.length; i++){
+        console.log(parent.children[i].innerHTML);
+    }
+
+    parent.children[1].style.color = 'orange'
+    console.log(parent.firstElementChild); // this will display the first element 
+    console.log(parent.lastElementChild); // this will display the last element 
+
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    console.log("NODES: ",parent.childNodes)   // for viewing the node list of the query selector 
+</script>
+</html>

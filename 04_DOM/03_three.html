@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model (DOM) Lecture-2.1</title>
+</head>
+<body style="background-color: black; color: white">
+    
+</body>
+<script>
+    // creating div elemment
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() *10 + 1)
+    div.setAttribute("title", "Made by Ravi Kumar")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    const addText = document.createTextNode("leacture 2.1") // adding text in div element
+    div.appendChild(addText) //append addText content in the div element as a children element 
+    // div.innerHTML = "Leacture 2.1"
+
+
+    document.body.appendChild(div) // here body appends div as his children element and displaying the content of the div in browser's page 
+    
+</script>
+</html>
