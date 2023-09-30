@@ -11,7 +11,7 @@
     </ul>
 </body>
 
-<script>
+<script> //adding elements with the help of function
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
@@ -21,13 +21,26 @@
     addLanguage("typescript")
     addLanguage("C++")
 
-
     function addoptiLanguage(langName){
         const li = document.createElement('li')
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
     }
     addoptiLanguage("C#")
+
+    //editing the content in the elenment
+    const secondLang = document.querySelector("li:nth-child(2)") //here pointing the nth element in the div
+    const newLi = document.createElement('li') 
+    newLi.textContent = "Django"
+    secondLang.replaceWith(newLi)
+
+    //Edit
+    const firstLang = document.querySelector("li:nth-child(1)")
+    firstLang.outerHTML = "<li>TypeScript</li>" //here we have changed the complete outer HTML
+
+    //Remove
+    const lastLang = document.querySelector("li:nth-child(4)")
+    lastLang.remove() //removing the element
 </script>
 
 </html>
