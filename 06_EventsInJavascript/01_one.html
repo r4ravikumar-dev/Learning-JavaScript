@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <script>
+        //events in browser invokes in some activities
+        //events in HTML will be problematic in some cenetirio
+
+        //method-1
+        document.getElementById('idName').onclick = function(){
+            alert('click message')
+        }
+
+        //method-2
+        document.getElementById('owl').addEventListener('click', function(e){
+            alert("clicked alert message again")
+            console.log(e);
+            //making function gives many types of details like time of event and position and many more
+        }, false)
+
+        //different types of events:
+        //type, timestamp, defaultprevent
+        //target, toElement, srcElement, currentTarget
+        //clientX, clientY, screenX, screenY
+        //altkey, ctrlkey, shiftkey, keyCode
+
+        //by default event propogation is false 
+
+        //Event propogation are of two type:
+        // 1. event bubelling (false): takes place from lower to upper
+        // 2. event capturing  (true): takes place from upper to lower
+
+        // stopPropogation() : it is a method used to stop the propogation of the event bubbling
+
+        document.querySelector('images').addEventListener('click',function(){
+            console.log(e.target.parentNode); // used to get the parent node of ther targeted event
+            //how to remove the parent node?
+            let removeIt = e.target.parentNode
+            // removeIt.remove() // direct remove the element
+            // removeIt.parentNode.removeChild(removeIt) // here  first it target to the parent node then it target to the specific child of that parent node and then remove the child node
+
+            // By the tagName
+            console.log(e.target.tagName) // target the elememt by the target name
+            if (e.target.tagName === IMG){
+                let removeIt = e.target.parentNode
+                console.log(e.target.id) // accesing the id of that element
+                removeIt.remove();
+            }
+        })
+    </script>
+</body>
+</html>
