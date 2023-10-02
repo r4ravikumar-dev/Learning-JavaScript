@@ -1,0 +1,9 @@
+Default JavaScript is a 
+* scyncronous langugae and 
+* single threaded
+each operation wait for the last one for the completing before
+
+Blocking Code vs Non-Blocking Code
+** blocking code: block the flow of the program and read file sync
+** non-blockinng code: do not block the execution and read file async
+
