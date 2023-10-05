@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGard</title>
+</head>
+<body>
+    <h1>Team CodeGard</h1>
+    <button id="info" >Get info</button>
+</body>
+
+<script>
+    setTimeout(function(){
+        console.log("Ravi Kumar");
+    }, 2000) //this function is timeout function that means the work will be done after that time in single time
+
+    setInterval(function(){
+        console.log("Ravi Kumar");
+    }, 2000) //this function will execute work repedtly after the timer
+
+    //using function paremeter
+    const hiRavi = function(){
+        console.log('Hi, ravi Kumar')
+    }
+    setTimeout(hiRavi, 2000)
+
+    const changetext = function (){
+        document.querySelector('h1').    innerHTML = "My name is Ravi Kumar"
+}
+
+// clearTimeout() is used to clear the setTimeout function
+const ChangeMe = setTimeout(changetext, 5000)
+document.querySelector('#info').addEventListener('click', function(){
+    clearTimeout(ChangeMe)
+    console.log("stopped");
+})
+
+</script>
+
+</html>
