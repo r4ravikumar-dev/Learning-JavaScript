@@ -4,7 +4,9 @@ var accoundPassword = "12345"
 accountCity = "Jaipur"
 let accountState;
 
-// accountId = 2 // not allowed
+//we can decelare varaible without describing whether it is let aur ver 
+
+// accountId = 2 // not allowed because wo use accountId as constatnt so it cannot be changed here
 
 console.log("accountId"); // for printing singlel item
 console.table([accountId, accountEmail, accoundPassword, accountCity, accountState]) // for printing item in tabular form
