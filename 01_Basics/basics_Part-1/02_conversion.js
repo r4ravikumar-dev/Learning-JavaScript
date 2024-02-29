@@ -6,7 +6,8 @@ console.log(2!=1)
 
 
 console.log("2">1);
-console.log("02">1);
+console.log("02">1); 
+//in the above example javascript converted the string into number automatically and tghen conversion takes place 
 
 
 console.log(null>0);
