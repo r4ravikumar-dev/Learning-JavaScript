@@ -1,13 +1,15 @@
 // dates
 
 let myDate = new Date()
-console.log(myDate);
+console.log(myDate); // it shows the current date which is of GMT+0000
 console.log(typeof myDate) // Date is an object in JavaScript
 console.log(myDate.toString()); // output: Sat Aug 19 2023 08:09:18 GMT+0000 (Coordinated Universal Time)
 console.log(myDate.toDateString()); // output: Sat Aug 19 2023
 console.log(myDate.toLocaleString()); // output: 8/19/2023, 8:09:18 AM
+// Converts a date and time to a string by using the current or specified locale.
 console.log(myDate.toISOString()); // output: 2023-08-19T08:09:18.409Z
-console.log(myDate.toLocaleDateString()); // output: 8/19/2023
+console.log(myDate.toLocaleDateString()); // output: 8/19/2023 
+//Converts a date to a string by using the current or specified locale.
 console.log(myDate.toUTCString()); // output: Sat, 19 Aug 2023 08:09:18 GMT
 
 
@@ -18,7 +20,7 @@ console.log(myCreatedDate.toDateString()); //Tue Sep 19 2023
 let myCreatedDate2 = new Date(2023, 8 ,19 , 5, 30) // syntax: Date(year: number, monthIndex: number, date?: number | undefined, hours?: number | undefined, minutes?: number | undefined, seconds?: number | undefined, ms?: number | undefined)
 console.log(myCreatedDate2.toLocaleString()); // 9/19/2023, 5:30:00 AM
 
-let myCreatedDate3 = new Date("2023-01-27") //if we write date in singlr digit then it will  satrt from 0 and will end to 11 and id we write in dd-mm-yyyy then it will start from 01 to 12
+let myCreatedDate3 = new Date("2023-01-27") //if we write date in single digit then it will  satrt from 0 and will end to 11 and id we write in dd-mm-yyyy then it will start from 01 and will end t0 12
 console.log(myCreatedDate3.toLocaleString()); //output: 1/27/2023, 12:00:00 AM
 
 
