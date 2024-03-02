@@ -1,4 +1,4 @@
-// two types of datatypes 
+ // two types of datatypes 
 // a. prempitive (used stack memory- crates copy of the value)
 // b. non-premptive (used heap memory- makes the refrence of the value)
 
