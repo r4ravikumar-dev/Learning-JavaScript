@@ -37,7 +37,7 @@ console.log(loginUserMessage());
 
 function calculateCartPrice(...num1){
     return num1
-} //if we declare only 1 parameter but in some situation we want more than one aergument then we use rest operator, it symbol is same as spread operator but its work is to pack all the argument in one and return it in a single parameter and it will give it in array
+} //if we declare only 1 parameter but in some situation we want more than one aergument then we use rest operator, its symbol is same as spread operator but its work is to pack all the argument in one and return it in a single parameter and it will return it in array
 
 console.log(calculateCartPrice(800,900,500));
 
