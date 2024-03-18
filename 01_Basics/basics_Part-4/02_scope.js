@@ -29,7 +29,7 @@ function one(){
         const website = "YouTube"
         console.log(username);
     }
-    // console.log(website); // this scope can't be accessed because it's scope is inside the two function only
+    console.log(website); // this scope can't be accessed because it's scope is inside the two function only
     // the function inside the function can access the items from its parent function and this concept is called as closure property 
 
     two()
