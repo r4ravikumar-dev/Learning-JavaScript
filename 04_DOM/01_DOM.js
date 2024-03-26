@@ -12,6 +12,8 @@ document //to access the complete document
 
 document.getElementById('') // to get access of that particular Id
 
+document.getElementById('idName').innerHTML = "<h1>manupalte the inner HTML text of the document</h1>" // this way we can manuplate the inner html text of the document
+
 document.getElementById('title').id //to return the name of that id
 
 document.getElementById('title').className //return the name of that calss
@@ -24,8 +26,13 @@ document.getElementById('title').setAttribute('class', 'test heading') //Sets th
 
 const title = document.getElementById('id') //stores the element in the variable named title
 
-title.textContent //get the text of that element
+title.textContent //get all of the text content of that element
 
-title.innerHTML // get the text of that element
+title.innerHTML // get the text of that element andnalso return the complete HTML code which has been written in that element
 
-title.innerText //get the text of that element
+title.innerText //get the text of that element it returns only the visible text content
+
+document.querySelector('#title') //select the first element
+document.querySelectorAll(li) // select all the list elements and it will give the node list 
+
+document.getElementsByClassName('item-list') //select the element by the class name and return the HLTML collection
